@@ -1,4 +1,4 @@
-package com.example.pilotflighthourtracker
+package com.example.pilotflighthourtracker.ui.screen
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
