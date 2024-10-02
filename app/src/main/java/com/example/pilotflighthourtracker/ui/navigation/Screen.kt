@@ -4,6 +4,6 @@ import androidx.compose.runtime.Composable
 
 
 sealed class Screen(val route:String) {
-    object HomeScreen: Screen("home_screen")
-    object LoginScreen: Screen("login_screen")
+    data object HomeScreen: Screen("home_screen")
+    data object LoginScreen: Screen("login_screen")
 }
