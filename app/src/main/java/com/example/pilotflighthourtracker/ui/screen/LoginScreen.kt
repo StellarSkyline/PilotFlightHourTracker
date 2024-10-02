@@ -47,7 +47,7 @@ fun LoginScreen(navController: NavController) {
     ) {
 
         Text(text = "Login Screen",
-            fontSize = 20.sp,
+            fontSize = 30.sp,
             color = Color.Blue,
             textAlign = TextAlign.Center,
             modifier = Modifier.layoutId("tv_title"))
