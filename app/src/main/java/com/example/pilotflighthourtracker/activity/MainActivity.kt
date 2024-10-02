@@ -1,4 +1,4 @@
-package com.example.pilotflighthourtracker.ui.screen
+package com.example.pilotflighthourtracker.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,37 +11,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.pilotflighthourtracker.ui.navigation.AppNavigation
 import com.example.pilotflighthourtracker.ui.theme.PilotFlightHourTrackerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            PilotFlightHourTrackerTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+            AppNavigation()
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    PilotFlightHourTrackerTheme {
-        Greeting("Android")
-    }
 }
